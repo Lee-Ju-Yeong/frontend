@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <link rel="stylesheet" href="css/font.css" />
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        caption-side: top;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      th {
+        background-color: beige;
+      }
+      caption {
+        text-align: left;
+        font-weight: bold;
+      }
+      .gubun {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        상품 구성
+      </caption>
+      <tr>
+        <th>용량</th>
+        <th>중량</th>
+        <th>개수</th>
+        <th>가격</th>
+      </tr>
+      <tr>
+        <td rowspan="2" class="gubun">선물용</td>
+        <td>3kg</td>
+        <td>11~16과</td>
+        <td>35,000원</td>
+      </tr>
+      <tr>
+        <td>5kg</td>
+        <td>18~25과</td>
+        <td>52,000원</td>
+      </tr>
+      <tr>
+        <td rowspan="2" class="gubun">가정용</td>
+        <td>3kg</td>
+        <td>11~16과</td>
+        <td>30,000원</td>
+      </tr>
+      <tr>
+        <td>5kg</td>
+        <td>18~25과</td>
+        <td>47,000원</td>
+      </tr>
+    </table>
+  </body>
+</html>

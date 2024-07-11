@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>border-width</title>
+    <style>
+      div {
+        box-sizing: border-box;
+        width: 200px;
+        height: 100px;
+        border-color: black;
+        border-style: solid;
+        margin: 30px;
+      }
+      .border1 {
+        border-width: 1px;
+      }
+      .border2 {
+        border-width: 1px 3px;
+      }
+      .border3 {
+        border-width: 1px 3px 5px;
+      }
+      .border4 {
+        border-width: 1px 3px 5px 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border1">border-width</div>
+    <div class="border2">border-width</div>
+    <div class="border3">border-width</div>
+    <div class="border4">border-width</div>
+  </body>
+</html>

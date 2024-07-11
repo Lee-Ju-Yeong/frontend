@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>order2</title>
+    <style>
+      table,
+      td {
+        padding: 5px;
+        text-align: center;
+      }
+      table {
+        border: 1px black solid;
+      }
+      .label {
+        display: inline-block;
+        width: 100px;
+      }
+      #name {
+        border: 1px gray solid;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>레드향 주문하기</h1>
+    <form name="order" action="order.jsp" method="post">
+      <fieldset>
+        <legend>상품 선택</legend>
+        <h4>주문할 상품을 선택해주세요.</h4>
+        <ul>
+          <li>
+            <input type="checkbox" id="s1" name="chk" />
+            <label for="s1">선물용 3kg</label>
+            <input type="number" min="0" max="5" />개(최대 5개)
+          </li>
+          <li>
+            <input type="checkbox" id="s2" name="chk" />
+            <label for="s2">선물용 5kg</label>
+            <input type="number" min="0" max="3" />개(최대 3개)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="checkbox" id="f1" name="chk" />
+            <label for="f1">가정용 3kg</label>
+            <input type="range" min="0" max="5" />개(최대 5개)
+          </li>
+          <li>
+            <input type="checkbox" id="f2" name="chk" />
+            <label for="f2">가정용 5kg</label>
+            <input type="range" min="0" max="3" />개(최대 3개)
+          </li>
+        </ul>
+        <h4>포장선택</h4>
+        <ul>
+          <li>
+            <input type="radio" name="gift" id="yes" />
+            <label for="yes">선물포장</label>
+          </li>
+          <li>
+            <input type="radio" name="gift" id="no" checked />
+            <label for="no">선물포장 안함</label>
+          </li>
+        </ul>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>배송 정보</legend>
+        <ul>
+          <li>
+            <label for="name" class="label">이름</label>
+            <input type="text" name="name" id="name" value="홍길동" readonly />
+          </li>
+          <li>
+            <label for="addr" class="label"><b>배송주소</b></label>
+            <input type="text" name="addr" id="addr" autofocus required />
+          </li>
+          <li>
+            <label for="mail_id" class="label">이메일</label>
+            <input type="text" id="mail_id" size="10" /> @
+            <input type="text" list="domain_list" size="10" />
+            <datalist id="domain_list">
+              <option value="naver.com">네이버</option>
+              <option value="google.com">구글</option>
+              <option value="daum.net">다음</option>
+            </datalist>
+          </li>
+          <li>
+            <label for="tel" class="label"><b>연락처</b></label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="010-0000-0000"
+              required
+            />
+          </li>
+          <li>
+            <label for="loc" class="label">배송위치</label>
+            <select name="loc" id="loc">
+              <option value="1">문앞</option>
+              <option value="2">경비실</option>
+              <option value="3">택배함</option>
+            </select>
+          </li>
+          <li>
+            <label for="memo" class="label">기타메모</label>
+            <textarea
+              name="memo"
+              id="memo"
+              cols="30"
+              rows="3"
+              maxlength
+            ></textarea>
+          </li>
+        </ul>
+      </fieldset>
+      <p>
+        <button type="submit">주문하기</button>
+        <button type="reset">취소하기</button>
+        <button type="button">쇼핑더하기</button>
+      </p>
+    </form>
+  </body>
+</html>

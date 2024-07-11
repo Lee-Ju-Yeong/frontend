@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2단 레이아웃</title>
+    <style>
+      #container {
+        width: 1200px;
+        margin: 0px auto;
+      }
+      #header {
+        background-color: lightblue;
+        width: 1200px;
+        height: 120px;
+      }
+      #aside {
+        background-color: lightcoral;
+        width: 300px;
+        height: 600px;
+        float: left;
+      }
+      #section {
+        background-color: lightgray;
+        width: 900px;
+        height: 600px;
+        float: left;
+      }
+      #footer {
+        background-color: lightpink;
+        width: 1200px;
+        height: 100px;
+        clear: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">header</header>
+      <aside id="aside">aside</aside>
+      <section id="section">section</section>
+      <footer id="footer">footer</footer>
+    </div>
+  </body>
+</html>

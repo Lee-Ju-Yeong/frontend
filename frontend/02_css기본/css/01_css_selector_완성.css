@@ -1,0 +1,40 @@
+/* 전체 선택자 */
+* {
+  margin: 0px;
+}
+
+/*타입 선택자*/
+p {
+  margin: 30px 0px;
+}
+
+img {
+  width: 400px;
+}
+
+/*id 선택자*/
+#container {
+  text-align: center;
+}
+
+/*클래스 선택자*/
+.red-font {
+  color: red;
+}
+.green-font {
+  color: green;
+}
+.yellow-background {
+  background-color: yellow;
+}
+
+/*group 선택자*/
+.flower,
+.cat {
+  font-weight: bold;
+}
+
+/*스타일 상속*/
+body {
+  font-style: italic;
+}

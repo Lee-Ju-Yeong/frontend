@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>margin</title>
+    <style>
+      .border {
+        box-sizing: border-box;
+        border: 1px black solid;
+        width: 200px;
+        height: 100px;
+      }
+      .margin1 {
+        margin: 20px;
+      }
+      .margin2 {
+        margin: 20px 50px;
+      }
+      .margin3 {
+        margin: 20px 50px 70px;
+      }
+      .margin4 {
+        margin: 20px 50px 70px 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border margin1">margin1</div>
+    <div class="border margin2">margin2</div>
+    <div class="border margin3">margin3</div>
+    <div class="border margin4">margin4</div>
+    <div class="border margin1">margin중첩</div>
+    <div class="border margin1">margin중첩</div>
+    <div class="border margin1">margin중첩</div>
+  </body>
+</html>

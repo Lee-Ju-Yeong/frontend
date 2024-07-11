@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>border-radius</title>
+    <style>
+      img {
+        border: 1px green solid;
+      }
+      .radius1 {
+        border-radius: 20px;
+      }
+      .radius2 {
+        border-radius: 50%;
+      }
+      .radius3 {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      .radius4 {
+        border-radius: 40px/20px;
+      }
+      .radius5 {
+        border-radius: 40px 0px;
+      }
+      .radius6 {
+        border-radius: 20px 40px 60px;
+      }
+      .radius7 {
+        border-radius: 20px 40px 60px 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/cat.jpg" width="30%" class="radius1" />
+    <img src="images/cat.jpg" width="30%" class="radius2" />
+    <img src="images/cat.jpg" width="30%" class="radius3" />
+    <img src="images/cat.jpg" width="30%" class="radius4" />
+    <img src="images/cat.jpg" width="30%" class="radius5" />
+    <img src="images/cat.jpg" width="30%" class="radius6" />
+    <img src="images/cat.jpg" width="30%" class="radius7" />
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box-shadow</title>
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      div {
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 50px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .shadow1 {
+        box-shadow: 10px 20px;
+      }
+      .shadow2 {
+        box-shadow: -10px -5px;
+      }
+      .shadow3 {
+        box-shadow: 10px 20px 30px;
+      }
+      .shadow4 {
+        box-shadow: 10px 20px 30px 20px;
+      }
+      .shadow5 {
+        box-shadow: 10px 20px 30px red inset;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shadow1">box-shadow1</div>
+    <div class="shadow2">box-shadow2</div>
+    <div class="shadow3">box-shadow3</div>
+    <div class="shadow4">box-shadow4</div>
+    <div class="shadow5">box-shadow5</div>
+  </body>
+</html>
