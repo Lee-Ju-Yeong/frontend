@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hyperlink</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: blue;
+      }
+      div {
+        border: 1px solid;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+      }
+    </style>
   </head>
   <body>
-    <div>세미나 일정 [보러가기]</div>
-    <div>제품소개서[보러가기]</div>
+    <div>
+      <a href="http://www.naver.com" target="_blank">네이버</a>
+    </div>
+    <div>
+      세미나 일정 <a href="05_table2_실습.html" target="_blank">[보러가기]</a>
+    </div>
+    <div>
+      제품소개서[<a href="files\product.pdf" target="_blank">보러가기]</a>
+    </div>
     <div>Google[이동]</div>
   </body>
 </html>
