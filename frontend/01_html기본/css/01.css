@@ -1,0 +1,30 @@
+/* 전체 선택자 */
+* {
+  margin: 0px;
+}
+p {
+  margin: 30px 0px;
+}
+
+img {
+  width: 400px;
+}
+#container {
+  text-align: center;
+}
+
+.pink-font {
+  color: pink;
+}
+.green-font {
+  color: green;
+}
+
+.yellow-background {
+  background-color: yellow;
+}
+
+.cat,
+.flower {
+  font-weight: bold;
+}

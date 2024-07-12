@@ -1,0 +1,101 @@
+/* div {
+  border: 1px solid;
+  margin: 5px;
+} */
+body {
+  font-size: 1.1em;
+
+  font-family: Arial, Apple SD Gothic Neo, sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+}
+
+.text-link {
+  /* 텍스트 밑줄을 없애겠다 */
+  text-decoration: none;
+  color: #202124;
+}
+font-family: Arial, Apple SD Gothic Neo, sans-serif;
+
+.text-link:hover {
+  text-decoration: underline;
+}
+.icon1 {
+  font-size: 20px;
+  color: #202124;
+}
+.icon2 {
+  font-size: 30px;
+  color: blueviolet;
+}
+
+.margin-left-20 {
+  margin-left: 20px;
+}
+
+.logo {
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.search-box {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.search-box-child {
+  height: 44px;
+  width: 700px;
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-box-child:hover {
+  box-shadow: 2px 3px 10px;
+  color: #9aa0a6;
+}
+.textbox {
+  width: 500px;
+  height: 40px;
+  color: #9aa0a6;
+  border: none;
+  outline: none;
+}
+
+.fa-magnifying-glass {
+  position: relative;
+  left: 25px;
+  color: #9aa0a6;
+}
+
+.fa-keyboard {
+  position: relative;
+  right: 5px;
+  color: #9aa0a6;
+}
+.fa-microphone {
+  position: relative;
+  right: 15px;
+  color: #9aa0a6;
+}
+
+.fa-camera {
+  position: relative;
+  right: 30px;
+  color: #9aa0a6;
+}

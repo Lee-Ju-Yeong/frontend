@@ -1,13 +1,4 @@
 document
-  .getElementById("initial-capital")
-  .addEventListener("input", function (e) {
-    var value = e.target.value.replace(/,/g, "").replace(/원/g, "");
-    if (!isNaN(value) && value !== "") {
-      e.target.value = parseInt(value).toLocaleString("ko-KR") + " 원";
-    }
-  });
-
-document
   .getElementById("backtest-form")
   .addEventListener("submit", function (e) {
     e.preventDefault();
@@ -16,34 +7,12 @@ document
 
 function runBacktest() {
   const initialCapital = parseInt(
-    document
-      .getElementById("initial-capital")
-      .value.replace(/,/g, "")
-      .replace(/원/g, "")
+    document.getElementById("initial-capital").value
   );
-  const numSplits = parseInt(document.getElementById("num-splits").value);
-  const investmentRatio = parseFloat(
-    document.getElementById("investment-ratio").value
-  );
-  const buyThreshold = parseFloat(
-    document.getElementById("buy-threshold").value
-  );
-  const pbrThreshold = parseFloat(
-    document.getElementById("pbr-threshold").value
-  );
-  const perThreshold = parseFloat(
-    document.getElementById("per-threshold").value
-  );
-  const dividendThreshold = parseFloat(
-    document.getElementById("dividend-threshold").value
-  );
-  const startDate = document.getElementById("start-date").value;
-  const endDate = document.getElementById("end-date").value;
-  const considerDelisting =
-    document.getElementById("consider-delisting").checked;
-  const portfolioSize = parseInt(
-    document.getElementById("portfolio-size").value
-  );
+  const numSplits = document.getElementById("num-splits").value;
+  const investmentRatio = document.getElementById("investment-ratio").value;
+  const buyThreshold = document.getElementById("buy-threshold").value;
+  const portfolioSize = document.getElementById("portfolio-size").value;
 
   // 예시 데이터를 사용한 차트 생성 (실제 데이터로 대체 필요)
   const ctx = document.getElementById("portfolio-chart").getContext("2d");
