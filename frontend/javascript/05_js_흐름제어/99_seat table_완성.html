@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>seat</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      #container {
+        background-color: #eee;
+        width: 80%;
+        display: grid;
+        justify-content: center;
+        padding-bottom: 30px;
+        text-align: center;
+      }
+      td {
+        width: 40px;
+        text-align: center;
+        padding: 3px;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 입력
+      //   const memNum = parseInt(prompt("입장객은 몇명입니까?"));
+      //   const colNum = parseInt(prompt("한 줄에 몇 명씩 앉습니까?"));
+      const memNum = 101;
+      const colNum = 10;
+      let rowNum;
+      if (memNum % colNum === 0) {
+        rowNum = memNum / colNum;
+      } else {
+        rowNum = parseInt(memNum / colNum) + 1;
+      }
+      console.log("필요한 줄 수:" + rowNum);
+
+      // 자리번호 출력하기
+      document.write("<div id='container'>");
+      document.write("<h1>자리배치도</h1>");
+      seatNo = 1;
+      document.write("<table>");
+      for (let i = 1; i <= rowNum; i++) {
+        document.write("<tr>");
+        for (let j = 1; j <= colNum; j++) {
+          document.write("<td>" + seatNo + "</td>");
+          seatNo++;
+          if (seatNo > memNum) {
+            break;
+          }
+        }
+        document.write("</tr>");
+      }
+      document.write("</table>");
+      document.write("</div>");
+    </script>
+  </body>
+</html>

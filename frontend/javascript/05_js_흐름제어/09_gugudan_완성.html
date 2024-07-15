@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>구구단</title>
+    <style>
+      body {
+        background-color: #ccc;
+        text-align: center;
+      }
+      #container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90vw;
+        margin: auto;
+      }
+      .dan {
+        padding: 25px;
+        margin: 10px;
+        width: 120px;
+        border-radius: 10px;
+        background-color: lightyellow;
+        text-align: left;
+        box-shadow: 2px 2px 2px 2px #999;
+      }
+      h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>구구단</h1>");
+      document.write("<div id='container'>");
+      for (let j = 2; j <= 9; j++) {
+        document.write("<div class='dan'>");
+        document.write(`<h3>${j}단</h3>`);
+        for (let i = 1; i <= 9; i++) {
+          document.write(`${j} * ${i} = ${i * j}<br>`);
+        }
+        document.write("</div>");
+      }
+      document.write("</div>");
+    </script>
+  </body>
+</html>

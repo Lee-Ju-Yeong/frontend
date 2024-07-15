@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event</title>
+  </head>
+  <body>
+    <h4>마우스이벤트</h4>
+    <p><button onclick="alert('클릭')">click</button></p>
+    <p><button ondblclick="alert('더블클릭')">dbclick</button></p>
+    <p><button onmousedown="alert('마우스버튼 누름')">mousedown</button></p>
+    <p><button onmouseup="alert('마우스버튼 누름 해제')">mouseup</button></p>
+    <p><button onmousemove="console.log('move')">mousemove</button></p>
+    <p><button onmouseover="console.log('over')">mouseover</button></p>
+    <p><button onmouseout="console.log('mouseout')">mouseout</button></p>
+    <p>
+      <button onmousedown="console.log('down')" onmouseup="console.log('up')">
+        mousedown & mouseup
+      </button>
+    </p>
+  </body>
+</html>

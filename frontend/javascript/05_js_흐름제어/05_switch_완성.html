@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch</title>
+  </head>
+  <body>
+    <script>
+      const session = prompt(
+        "관심 세션을 입력해주세요\n(1-마케팅, 2-개발, 3-디자인)"
+      );
+      let msg;
+      switch (session) {
+        case "1":
+          msg = "마케팅 세션은 <strong>202호</strong>에서 진행됩니다.";
+          break;
+        case "2":
+          msg = "개발 새션은 <strong>203호</strong>에서 진행됩니다.";
+          break;
+        case "3":
+          msg = "디자인 세션은 <strong>204호</strong>에서 진행됩니다.";
+          break;
+        default:
+          msg = "잘못 입력하셨습니다.";
+      }
+      document.write(msg);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>즉시실행함수</title>
+  </head>
+  <body>
+    <script>
+      // 두 수를 매개변수로 받아 더한 값을 출력하는 즉시실행함수
+      (function (n1, n2) {
+        let sum = n1 + n2;
+        console.log(sum);
+      })(1, 2);
+
+      // hello, world를 출력하는 즉시실행함수
+      (function () {
+        document.write("<h1>hello, world</h1>");
+      })();
+
+      // name, msg를 매개변수로 받아 문구를 만들어 출력하는 즉시실행함수.
+      (function (name, msg) {
+        document.write(`${name}님, ${msg}`);
+      })("홍길동", "안녕하세요.");
+
+      // 숫자 하나를 입력받아 변수 n에 담고,
+      // 1부터 n까지 더한 값을 리턴하는 즉시실행함수
+      // 리턴 값을 변수에 바로 담아 사용한다.
+      let result = (function (num) {
+        let n = num;
+        let sum = 0;
+        for (let i = 1; i <= n; i++) {
+          sum += i;
+        }
+        return sum;
+      })(10);
+      console.log(result);
+    </script>
+  </body>
+</html>

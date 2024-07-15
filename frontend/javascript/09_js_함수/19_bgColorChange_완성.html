@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>colorChange</title>
+    <style>
+      button {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        border: 1px white solid;
+        color: white;
+        font-size: 1.5em;
+        background-color: #ccc;
+      }
+      #btnRed {
+        background-color: red;
+      }
+      #btnBlue {
+        background-color: blue;
+      }
+      #btnGreen {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body onclick="fnWhite()">
+    <button id="btnRed" onclick="fnRed()">red</button>
+    <button id="btnBlue" onclick="fnBlue()">blue</button>
+    <button id="btnGreen" onclick="fnGreen()">green</button>
+    <script>
+      function fnRed() {
+        document.querySelector("body").style.backgroundColor = "red";
+      }
+      function fnBlue() {
+        document.querySelector("body").style.backgroundColor = "blue";
+      }
+      function fnGreen() {
+        document.querySelector("body").style.backgroundColor = "green";
+      }
+    </script>
+  </body>
+</html>

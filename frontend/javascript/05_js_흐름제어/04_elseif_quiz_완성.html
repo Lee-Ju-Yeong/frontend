@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습문제3</title>
+  </head>
+  <body>
+    <script>
+      let n = prompt("숫자를 입력하세요");
+
+      if (n === null) {
+        alert("입력하지 않음");
+      } else {
+        n = parseInt(n);
+        if (n === 0) {
+          alert(0);
+        } else if (n % 2 === 0) {
+          alert("짝수");
+        } else {
+          alert("홀수");
+        }
+      }
+    </script>
+  </body>
+</html>

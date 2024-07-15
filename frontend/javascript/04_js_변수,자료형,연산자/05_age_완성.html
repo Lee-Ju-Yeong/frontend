@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>template literals</title>
+  </head>
+  <body>
+    <script>
+      var name = prompt("이름을 입력하세요.");
+      var age = parseInt(prompt("나이를 입력하세요."));
+      var msg = `<h1>`;
+      msg += `${name}님은 ${age}살이시군요.<br>`;
+      msg += `내년이면 ${age + 1}살이 되시겠네요.`;
+      msg += `</h1>`;
+      document.write(msg);
+    </script>
+  </body>
+</html>
