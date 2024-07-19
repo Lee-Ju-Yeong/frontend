@@ -116,6 +116,7 @@ for page in range(num_pages_required):
             if current_page == 10:
                 next_button = driver.find_element(By.CSS_SELECTOR, '.board_pager03 a.next')
                 next_button.click()
+                
             else:
                 next_page_number = current_page + 1
                 next_page_button = driver.find_element(By.XPATH, f"//a[text()='{next_page_number}']")
