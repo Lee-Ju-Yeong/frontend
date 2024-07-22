@@ -127,7 +127,8 @@ def crawl_patents(query, num_patents_required):
     특허_list = 특허_list[:num_patents_required]
 
     current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
-    file_name = f"{query}_특허_{num_patents_required}개_{current_time}.xlsx"
+    query_for_filename = query.replace('"', '')  # 파일 이름에서 따옴표 제거
+    file_name = f"{query_for_filename}_특허_{num_patents_required}개_{current_time}.xlsx"
     file_path = os.path.join(os.getcwd(), file_name) # 절대 경로로 파일 경로 설정
     df = pd.DataFrame(특허_list, columns=['Status', 'Title', 'Title_EN', 'IPC', 'Application Number', 'Application Date', 'Applicant', 'Holder', 'Citations', 'Abstract'])
     df.to_excel(file_name, index=False, engine='openpyxl')
@@ -168,6 +169,7 @@ def index():
 @app.route('/search_patents', methods=['POST'])
 def search_patents():
     query = request.json['query']
+    query = f'"{query}"'  # 검색어에 따옴표 추가
     num_patents_required = int(request.json['number'])
 
     if not query or num_patents_required <= 0:
